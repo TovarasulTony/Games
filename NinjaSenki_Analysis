@@ -1,0 +1,49 @@
+Ninja Senki:
+
+1.Descriere generala:
+
+2.Interactiuni cu playerul:
+
+	a)Inamici:
+	*La contact cu un inamic se intampla urmatoarele:
+		-playerul primeste dmg
+		-playerul este impins putin in spate
+		-playerul are animatie de luat dmg, palpaie
+		-playerul devine invulnerabil pt cateva secunde, in acest moment playerul poate sa treaca prin inamici si la contact nu se intampla nimic, nu luat dmg, nimic
+		-playerul are un mic stun care dureaza mai putin decat invulnerabilitatea
+	
+	*Cand playerul a lovit un inamic:
+		-inamicul primeste dmg
+		-inamicul spameaza sange pt cateva secunde
+		-no knockback
+	
+	*Moartea unui inamic
+		-playerul primeste puncte in functie de monstru
+		-unii inamici au efecte speciale cand mor
+		
+	b)Enviroment:
+	*Platforme si pereti generici:
+		-doar dreptunghiuri, nicio chestie digonala
+		-jucatorul nu trece prin ele si nu este impins in spate in functie de viteza cu care intra in ele
+	*Capcane:
+		-acelasi comportament ca atunci cand playerul intra in monstri
+	
+	c)Abilitati:
+	*Jump
+		-cand se apasa space caracterul sare un timp maxim T. Cu cat se tine apasat mai mult space cu atat saritura dureaza mai mult (nu mai mult de T), deci daca este apasat scurt space, timpul sariturii va fi mai mic de T
+		-se poate sari odata indiferent daca suntem in aer sau pe pamant, pentru a sari din nou trebuie atins pamantul.
+		-daca incepem de pe pamant avem double jump (odata sarim de pe pamant si odata putem sari in aer). In caz ca suntem in cadere nu se poate sari de doua ori, doar o data.
+		-daca sarim intr-un inamic jumpul este anulat, are stun
+		
+	*Movement
+		-nu exista inertie, daca nu exista input jucatorul nu se misca
+		
+3.Cum interactioneaza inamicii
+	-Inamicii isi blocheaza movementul unul altuia
+	-Atacuk inamicilor se opreste in teren sau alt inamic, nu trece prin ei
+	
+4.Currency:
+
+	a)Puncte:
+		-punctele sunt obtinute prin a omora inamici si prin a face trece prin levele
+		-cu puncte poti cumpara vieti
